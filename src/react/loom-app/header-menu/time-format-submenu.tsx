@@ -17,12 +17,12 @@ export default function TimeFormatSubmenu({
 	return (
 		<Submenu title={title} onBackClick={onBackClick}>
 			<MenuItem
-				name="12 hour"
+				name="12小时制"
 				onClick={() => onValueClick(true)}
 				isSelected={value === true}
 			/>
 			<MenuItem
-				name="24 hour"
+				name="24小时制"
 				onClick={() => onValueClick(false)}
 				isSelected={value === false}
 			/>

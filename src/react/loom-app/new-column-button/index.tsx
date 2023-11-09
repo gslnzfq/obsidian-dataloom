@@ -12,7 +12,7 @@ export default function NewColumnButton({ onClick }: Props) {
 		<div className="dataloom-new-column">
 			<Button
 				icon={<Icon lucideId="plus" />}
-				ariaLabel="New column"
+				ariaLabel="添加列"
 				onClick={() => onClick()}
 			/>
 		</div>

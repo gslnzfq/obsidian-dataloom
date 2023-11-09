@@ -18,6 +18,6 @@ export const getSourceCellContent = (source: Source | null) => {
 			return propertyKey;
 		}
 		default:
-			throw new Error("Source type not supported");
+			throw new Error("数据源类型暂不支持");
 	}
 };

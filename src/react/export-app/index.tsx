@@ -38,7 +38,7 @@ export function ExportApp({ app, loomState, loomFilePath }: Props) {
 
 	async function handleCopyClick(value: string) {
 		await navigator.clipboard.writeText(value);
-		new Notice("Copied to clipboard");
+		new Notice("成功复制到剪切板");
 	}
 
 	function handleDownloadClick() {
@@ -62,7 +62,7 @@ export function ExportApp({ app, loomState, loomFilePath }: Props) {
 					<>
 						<Stack spacing="sm">
 							<label htmlFor="remove-markdown">
-								Remove markdown
+								移除markdown
 							</label>
 							<Switch
 								id="remove-markdown"
@@ -78,13 +78,13 @@ export function ExportApp({ app, loomState, loomFilePath }: Props) {
 								className="mod-cta"
 								onClick={handleDownloadClick}
 							>
-								Download
+								下载
 							</button>
 							<button
 								className="dataloom-copy-button"
 								onClick={() => handleCopyClick(content)}
 							>
-								Copy to clipboard
+								复制到剪切板
 							</button>
 						</Stack>
 					</>

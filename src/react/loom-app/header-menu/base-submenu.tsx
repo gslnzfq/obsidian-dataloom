@@ -91,7 +91,7 @@ export default function BaseSubmenu({
 					columnType !== CellType.SOURCE_FILE && (
 						<MenuItem
 							lucideId="list"
-							name="Type"
+							name="数据类型"
 							value={getDisplayNameForCellType(columnType)}
 							onClick={() => {
 								onSubmenuChange(SubmenuType.TYPE);
@@ -103,8 +103,8 @@ export default function BaseSubmenu({
 					columnType !== CellType.SOURCE_FILE && (
 						<MenuItem
 							lucideId="file-key-2"
-							name="Frontmatter key"
-							value={frontmatterKey || "No key set"}
+							name="关联文档属性"
+							value={frontmatterKey || "未关联属性"}
 							onClick={() => {
 								onSubmenuChange(SubmenuType.FRONTMATTER_KEY);
 							}}
@@ -113,7 +113,7 @@ export default function BaseSubmenu({
 				{hasOptions && (
 					<MenuItem
 						lucideId="settings"
-						name="Options"
+						name="选项"
 						onClick={() => {
 							onSubmenuChange(SubmenuType.OPTIONS);
 						}}
@@ -123,40 +123,40 @@ export default function BaseSubmenu({
 			<Divider />
 			<MenuItem
 				lucideId="arrow-up"
-				name="Ascending"
+				name="升序"
 				onClick={() => onSortClick(SortDir.ASC)}
 				isSelected={columnSortDir === SortDir.ASC}
 			/>
 			<MenuItem
 				lucideId="arrow-down"
-				name="Descending"
+				name="降序"
 				onClick={() => onSortClick(SortDir.DESC)}
 				isSelected={columnSortDir === SortDir.DESC}
 			/>
 			<Divider />
 			<MenuItem
 				lucideId="eye-off"
-				name="Hide"
+				name="隐藏"
 				onClick={() => onHideClick()}
 			/>
 			{index < 4 && numFrozenColumns !== index + 1 && (
 				<MenuItem
 					lucideId="pin"
-					name="Freeze up to column"
+					name="冻结列"
 					onClick={() => onFrozenColumnsChange(index + 1)}
 				/>
 			)}
 			{numFrozenColumns === index + 1 && (
 				<MenuItem
 					lucideId="pin-off"
-					name="Unfreeze columns"
+					name="取消冻结列"
 					onClick={() => onFrozenColumnsChange(1)}
 				/>
 			)}
 			{canDeleteColumn && (
 				<MenuItem
 					lucideId="trash"
-					name="Delete"
+					name="删除列"
 					onClick={() => onDeleteClick()}
 				/>
 			)}
@@ -167,7 +167,7 @@ export default function BaseSubmenu({
 						<Divider />
 						<Padding px="lg" py="md">
 							<Flex justify="space-between" align="center">
-								<Text value="Wrap content" />
+								<Text value="文本换行" />
 								<Switch
 									value={shouldWrapOverflow}
 									onToggle={(value) =>

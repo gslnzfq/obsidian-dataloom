@@ -26,7 +26,7 @@ export const serializeFrontmatter = async (app: App, state: LoomState) => {
 	const sourceFileColumn = columns.find(
 		(column) => column.type === CellType.SOURCE_FILE
 	);
-	if (!sourceFileColumn) throw new Error("Source file column not found");
+	if (!sourceFileColumn) throw new Error("源文件列未找到");
 
 	for (const row of rows) {
 		const { sourceId, cells } = row;
@@ -37,11 +37,11 @@ export const serializeFrontmatter = async (app: App, state: LoomState) => {
 		const sourceFileCell: SourceFileCell | undefined = cells.find(
 			(cell) => cell.columnId === sourceFileColumn.id
 		) as SourceFileCell | undefined;
-		if (!sourceFileCell) throw new Error("Source file cell not found");
+		if (!sourceFileCell) throw new Error("源文件行未找到");
 
 		const file = app.vault.getAbstractFileByPath(sourceFileCell.path);
-		if (!file) throw new Error("Source file not found");
-		if (!(file instanceof TFile)) throw new Error("Expected TFile");
+		if (!file) throw new Error("未找到源文件");
+		if (!(file instanceof TFile)) throw new Error("未知文件");
 
 		for (const column of columns) {
 			const {

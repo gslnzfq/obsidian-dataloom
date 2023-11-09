@@ -308,7 +308,7 @@ export default function DateCellEdit({
 					>
 						<MenuItem
 							isFocusable={false}
-							name="Date separator"
+							name="日期分隔符"
 							value={getDisplayNameForDateFormatSeparator(
 								dateFormatSeparator
 							)}
@@ -317,7 +317,7 @@ export default function DateCellEdit({
 					<Padding px="lg">
 						<Stack spacing="sm">
 							<label htmlFor={includeTimeToggleId}>
-								Include time
+								包含时间
 							</label>
 							<Switch
 								id={includeTimeToggleId}
@@ -339,8 +339,8 @@ export default function DateCellEdit({
 						>
 							<MenuItem
 								isFocusable={false}
-								name="Time format"
-								value={hour12 ? "12 hour" : "24 hour"}
+								name="时间格式"
+								value={hour12 ? "12小时制" : "24小时制"}
 							/>
 						</MenuTrigger>
 					)}

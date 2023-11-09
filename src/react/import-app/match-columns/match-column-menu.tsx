@@ -60,7 +60,7 @@ export default function MatchColumnMenu({
 				})}
 			<Divider />
 			<MenuItem
-				name="Match as new"
+				name="添加新列"
 				onClick={() => onColumnClick(NEW_COLUMN_ID)}
 				isSelected={selectedColumnId === NEW_COLUMN_ID}
 			/>

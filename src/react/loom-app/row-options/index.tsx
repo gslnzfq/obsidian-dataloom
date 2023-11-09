@@ -197,7 +197,7 @@ export default function RowOptions({
 							ref={menu.triggerRef}
 							level={LoomMenuLevel.ONE}
 							icon={<Icon lucideId="grip-vertical" />}
-							ariaLabel="Drag to move or click to open"
+							ariaLabel="拖动移动行或单击打开"
 							onMouseDown={handleMouseDown}
 							onOpen={() => menu.onOpen(LoomMenuLevel.ONE)}
 						/>

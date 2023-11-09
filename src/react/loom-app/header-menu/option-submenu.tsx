@@ -65,7 +65,7 @@ export default function OptionSubmenu({
 				<Stack spacing="sm">
 					{type === CellType.EMBED && (
 						<MenuItem
-							name="Aspect ratio"
+							name="宽高比"
 							value={aspectRatio}
 							onClick={() =>
 								onSubmenuChange(SubmenuType.ASPECT_RATIO)
@@ -74,7 +74,7 @@ export default function OptionSubmenu({
 					)}
 					{type === CellType.EMBED && (
 						<MenuItem
-							name="Horizontal padding"
+							name="水平内边距"
 							value={horizontalPadding}
 							onClick={() =>
 								onSubmenuChange(SubmenuType.HORIZONTAL_PADDING)
@@ -83,7 +83,7 @@ export default function OptionSubmenu({
 					)}
 					{type === CellType.EMBED && (
 						<MenuItem
-							name="Vertical padding"
+							name="垂直内边距"
 							value={verticalPadding}
 							onClick={() =>
 								onSubmenuChange(SubmenuType.VERTICAL_PADDING)
@@ -92,7 +92,7 @@ export default function OptionSubmenu({
 					)}
 					{type === CellType.NUMBER && (
 						<MenuItem
-							name="Number format"
+							name="数字格式"
 							value={numberFormatDisplayName}
 							onClick={() =>
 								onSubmenuChange(SubmenuType.CURRENCY)
@@ -102,7 +102,7 @@ export default function OptionSubmenu({
 					{type === CellType.NUMBER &&
 						numberFormat == NumberFormat.NUMBER && (
 							<MenuItem
-								name="Prefix"
+								name="前缀"
 								value={numberPrefix}
 								onClick={() =>
 									onSubmenuChange(
@@ -114,7 +114,7 @@ export default function OptionSubmenu({
 					{type === CellType.NUMBER &&
 						numberFormat == NumberFormat.NUMBER && (
 							<MenuItem
-								name="Suffix"
+								name="后缀"
 								value={numberSuffix}
 								onClick={() =>
 									onSubmenuChange(
@@ -126,7 +126,7 @@ export default function OptionSubmenu({
 					{type === CellType.NUMBER &&
 						numberFormat == NumberFormat.NUMBER && (
 							<MenuItem
-								name="Separator"
+								name="分隔符"
 								value={numberSeparator}
 								onClick={() =>
 									onSubmenuChange(
@@ -139,14 +139,14 @@ export default function OptionSubmenu({
 						type === CellType.LAST_EDITED_TIME) && (
 						<>
 							<MenuItem
-								name="Date format"
+								name="日期格式"
 								value={getDisplayNameForDateFormat(dateFormat)}
 								onClick={() =>
 									onSubmenuChange(SubmenuType.DATE_FORMAT)
 								}
 							/>
 							<MenuItem
-								name="Date separator"
+								name="日期分隔符"
 								value={getDisplayNameForDateFormatSeparator(
 									dateFormatSeparator
 								)}
@@ -157,8 +157,8 @@ export default function OptionSubmenu({
 								}
 							/>
 							<MenuItem
-								name="Time format"
-								value={hour12 ? "12 hour" : "24 hour"}
+								name="时间格式"
+								value={hour12 ? "12小时制" : "24小时制"}
 								onClick={() =>
 									onSubmenuChange(SubmenuType.TIME_FORMAT)
 								}

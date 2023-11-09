@@ -26,7 +26,7 @@ export default class ImportModal extends Modal {
 
 	onOpen() {
 		const { containerEl } = this;
-		setModalTitle(containerEl, "DataLoom Import");
+		setModalTitle(containerEl, "DataLoom导入");
 
 		const { contentEl } = this;
 		renderDivider(contentEl);

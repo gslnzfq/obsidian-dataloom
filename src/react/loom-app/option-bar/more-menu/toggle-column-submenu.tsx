@@ -18,7 +18,7 @@ export default function ToggleColumnSubmenu({
 	onBackClick,
 }: Props) {
 	return (
-		<Submenu title="Toggle" onBackClick={onBackClick}>
+		<Submenu title="切换列" onBackClick={onBackClick}>
 			<Padding py="sm">
 				<Stack spacing="md">
 					{columns.map((column) => {

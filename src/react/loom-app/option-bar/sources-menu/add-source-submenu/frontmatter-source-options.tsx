@@ -34,7 +34,7 @@ export default function FrontmatterSourceOptions({
 	return (
 		<>
 			<Stack spacing="sm">
-				<label htmlFor={propertyTypeSelectId}>Property Type</label>
+				<label htmlFor={propertyTypeSelectId}>属性类型</label>
 				<Select
 					value={selectedPropertyType ?? ""}
 					onChange={(value) =>
@@ -43,7 +43,7 @@ export default function FrontmatterSourceOptions({
 						)
 					}
 				>
-					<option value="">Select an option</option>
+					<option value="">请选择</option>
 					{Object.values(ObsidianPropertyType).map((type) => {
 						return (
 							<option key={type} value={type}>
@@ -54,13 +54,13 @@ export default function FrontmatterSourceOptions({
 				</Select>
 			</Stack>
 			<Stack spacing="sm">
-				<label htmlFor={propertyKeySelectId}>Property Key</label>
+				<label htmlFor={propertyKeySelectId}>属性字段</label>
 				<Select
 					isDisabled={selectedPropertyType === null}
 					value={selectedPropertyKey ?? ""}
 					onChange={(value) => onPropertyKeyChange(value || null)}
 				>
-					<option value="">Select an option</option>
+					<option value="">请选择</option>
 					{Object.values(propertyTypes).map((type) => {
 						return (
 							<option key={type} value={type}>

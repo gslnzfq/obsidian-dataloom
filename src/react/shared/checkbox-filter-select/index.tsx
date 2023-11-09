@@ -16,8 +16,8 @@ export default function CheckboxFilterSelect({ value, onChange }: Props) {
 
 	return (
 		<Select value={value ? "true" : "false"} onChange={handleChange}>
-			<option value="false">Unchecked</option>
-			<option value="true">Checked</option>
+			<option value="false">未勾选</option>
+			<option value="true">已勾选</option>
 		</Select>
 	);
 }

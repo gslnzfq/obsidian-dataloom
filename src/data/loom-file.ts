@@ -45,7 +45,7 @@ export const createLoomFile = async (
 		const file = await createFile(app, formattedPath, serializedState);
 		return file;
 	} catch (err) {
-		new Notice("Could not create loom file");
+		new Notice("无法创建loom文件");
 		throw err;
 	}
 };

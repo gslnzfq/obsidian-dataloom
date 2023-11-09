@@ -10,7 +10,7 @@ export const getLastestGithubRelease = async () => {
 		return body;
 	} catch (err) {
 		console.error(err);
-		new Notice("Error fetching latest release");
+		new Notice("获取最新版本失败");
 		return null;
 	}
 };

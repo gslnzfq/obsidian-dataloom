@@ -9,7 +9,7 @@ interface Props {
 export default function ExportTypeSelect({ value, onChange }: Props) {
 	return (
 		<Stack spacing="xl">
-			<label htmlFor="type-select">File Type</label>
+			<label htmlFor="type-select">文件类型</label>
 			<select
 				id="type-select"
 				value={value}

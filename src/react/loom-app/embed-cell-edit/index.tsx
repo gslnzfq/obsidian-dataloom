@@ -48,7 +48,7 @@ export default function EmbedCellEdit({
 		<div className="dataloom-embed-cell-edit">
 			<Padding width="100%" p="md">
 				<Stack spacing="sm" width="100%">
-					<label htmlFor="external-switch">External Link</label>
+					<label htmlFor="external-switch">外部链接</label>
 					<Switch
 						id="external-switch"
 						value={isExternalLink}

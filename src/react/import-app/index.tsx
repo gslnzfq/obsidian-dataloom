@@ -157,7 +157,7 @@ export default function ImportApp({ state, onStateChange }: Props) {
 
 	const steps: Step[] = [
 		{
-			title: "Select data type",
+			title: "选择数据类型",
 			content: (
 				<DataTypeSelect
 					value={dataType}
@@ -167,7 +167,7 @@ export default function ImportApp({ state, onStateChange }: Props) {
 			canContinue: dataType !== DataType.UNSELECTED,
 		},
 		{
-			title: "Select data source",
+			title: "选择数据源",
 			content: (
 				<DataSourceSelect
 					value={dataSource}
@@ -177,7 +177,7 @@ export default function ImportApp({ state, onStateChange }: Props) {
 			canContinue: dataSource !== DataSource.UNSELECTED,
 		},
 		{
-			title: "Upload data",
+			title: "上传数据",
 			content: (
 				<UploadData
 					hasHeadersRow={hasHeadersRow}
@@ -228,7 +228,7 @@ export default function ImportApp({ state, onStateChange }: Props) {
 			},
 		},
 		{
-			title: "Match columns",
+			title: "调整列",
 			content: (
 				<MatchColumns
 					data={data}
@@ -253,7 +253,7 @@ export default function ImportApp({ state, onStateChange }: Props) {
 			},
 		},
 		{
-			title: "Finalize import",
+			title: "完成导入",
 			content: (
 				<FinalizeImport
 					hasDateColumnMatch={hasDateColumnMatch}

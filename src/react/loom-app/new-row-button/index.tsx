@@ -9,10 +9,10 @@ export default function NewRowButton({ onClick }: Props) {
 	return (
 		<Button
 			icon={<Icon lucideId="plus" />}
-			ariaLabel="New row"
+			ariaLabel="添加行"
 			onClick={() => onClick()}
 		>
-			New
+			添加行
 		</Button>
 	);
 }

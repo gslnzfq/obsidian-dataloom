@@ -26,9 +26,9 @@ export default function StepButtons({
 					variant="default"
 					onClick={onNextClick}
 				>
-					{isLastStep ? finishButtonLabel : "Next"}
+					{isLastStep ? finishButtonLabel : "下一步"}
 				</Button>
-				{!isFirstStep && <Button onClick={onBackClick}>Back</Button>}
+				{!isFirstStep && <Button onClick={onBackClick}>返回</Button>}
 			</Stack>
 		</div>
 	);

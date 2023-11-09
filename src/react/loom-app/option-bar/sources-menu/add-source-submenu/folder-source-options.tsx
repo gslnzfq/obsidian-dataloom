@@ -26,7 +26,7 @@ export default function FolderSourceOptions({
 	return (
 		<>
 			<Stack spacing="sm">
-				<label htmlFor={pathInputId}>Path</label>
+				<label htmlFor={pathInputId}>路径</label>
 				<Input
 					id={pathInputId}
 					autoFocus={false}
@@ -37,7 +37,7 @@ export default function FolderSourceOptions({
 			</Stack>
 			<Stack spacing="sm">
 				<label htmlFor={includeSubfoldersInputId}>
-					Include subfolders
+					包含子文件夹
 				</label>
 				<Switch
 					value={includeSubfolders}

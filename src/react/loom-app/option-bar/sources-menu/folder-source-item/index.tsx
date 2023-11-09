@@ -33,7 +33,7 @@ export default function FolderSourceItem({
 				</Stack>
 				<Button
 					icon={<Icon lucideId="trash" />}
-					ariaLabel="Delete source"
+					ariaLabel="删除数据源"
 					onClick={() => onDelete(id)}
 				/>
 			</Flex>

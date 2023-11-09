@@ -138,7 +138,7 @@ export default function AddSourceSubmenu({
 			<Padding py="md">
 				<Stack spacing="lg">
 					<Stack spacing="sm">
-						<label htmlFor="type">Type</label>
+						<label htmlFor="type">类型</label>
 						<Select
 							id="type"
 							value={type ?? ""}
@@ -147,7 +147,7 @@ export default function AddSourceSubmenu({
 								setType((value as SourceType) || null)
 							}
 						>
-							<option value="">Select an option</option>
+							<option value="">请选择</option>
 							{Object.values(SourceType).map((type) => {
 								return (
 									<option key={type} value={type}>
@@ -183,7 +183,7 @@ export default function AddSourceSubmenu({
 						<Text value={error.message} variant="error" />
 					)}
 					<Button variant="default" onClick={() => handleAddClick()}>
-						Add
+						添加
 					</Button>
 				</Stack>
 			</Padding>

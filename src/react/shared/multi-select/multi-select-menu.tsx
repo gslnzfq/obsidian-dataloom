@@ -55,7 +55,7 @@ export default function MultiSelectMenu({
 					<Padding px="md" pt="sm">
 						<Input
 							value={inputValue}
-							placeholder="Type to filter..."
+							placeholder="输入关键字筛选..."
 							onChange={setInputValue}
 						/>
 					</Padding>
@@ -75,7 +75,7 @@ export default function MultiSelectMenu({
 						})}
 						{options.length === 0 && (
 							<Padding px="md" pb="sm">
-								<Text value="No options to select" />
+								<Text value="没有可选项" />
 							</Padding>
 						)}
 					</div>

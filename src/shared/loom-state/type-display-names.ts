@@ -133,9 +133,9 @@ export const getDisplayNameForNumberCalculation = (
 export const getDisplayNameForSource = (type: SourceType) => {
 	switch (type) {
 		case SourceType.FOLDER:
-			return "Folder";
+			return "文件夹";
 		case SourceType.FRONTMATTER:
-			return "Frontmatter";
+			return "文档属性";
 		default:
 			return "";
 	}
@@ -159,11 +159,11 @@ export const getDisplayNameForDateFormatSeparator = (
 ) => {
 	switch (format) {
 		case DateFormatSeparator.SLASH:
-			return "Slash";
+			return "斜杠";
 		case DateFormatSeparator.DOT:
-			return "Dot";
+			return "点";
 		case DateFormatSeparator.HYPHEN:
-			return "Hyphen";
+			return "中划线";
 		default:
 			return "";
 	}

@@ -7,7 +7,7 @@ interface Props {
 export default function ActiveFilterBubble({ numActive }: Props) {
 	if (numActive === 0) return <></>;
 
-	const value = `${numActive} active filter${numActive > 1 ? "s" : ""}`;
+	const value = `${numActive}个筛选条件`;
 	return (
 		<div className="dataloom-active-filter-bubble">
 			<Bubble value={value} />

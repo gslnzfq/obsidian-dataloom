@@ -93,13 +93,13 @@ export default function FilterRow({
 				>
 					<Button
 						icon={<Icon lucideId="trash-2" />}
-						ariaLabel="Delete filter"
+						ariaLabel="清除筛选条件"
 						onClick={() => onDeleteClick(id)}
 					/>
 					<Switch
 						value={isEnabled}
 						ariaLabel={
-							isEnabled ? "Disable filter" : "Enable filter"
+							isEnabled ? "禁用筛选" : "启用筛选"
 						}
 						onToggle={() => onToggle(id)}
 					/>

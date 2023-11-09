@@ -41,7 +41,7 @@ export default function FileInput({
 		<div className="dataloom-file-input">
 			<Stack spacing="2xl">
 				<Stack>
-					<Text value={fileName ?? "No file chosen"} />
+					<Text value={fileName ?? "没有选中的文件"} />
 					<input
 						type="file"
 						accept={accept}
@@ -51,7 +51,7 @@ export default function FileInput({
 				{accept === ".csv" && (
 					<Stack spacing="sm">
 						<label htmlFor="has-headers">
-							First row contains headers
+							第一行包含标题
 						</label>
 						<Switch
 							id="has-headers"

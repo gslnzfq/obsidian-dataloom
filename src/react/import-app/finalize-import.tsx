@@ -69,7 +69,7 @@ export default function FinalizeImport({
 							</Padding>
 						</Stack>
 						<Stack spacing="sm">
-							<label htmlFor={dateFormatId}>Date format</label>
+							<label htmlFor={dateFormatId}>日期格式</label>
 							<Select
 								id={dateFormatId}
 								value={dateFormat ?? ""}
@@ -79,7 +79,7 @@ export default function FinalizeImport({
 									)
 								}
 							>
-								<option value="">Select an option</option>
+								<option value="">请选择</option>
 								{Object.values(DateFormat).map((format) => (
 									<option key={format} value={format}>
 										{getDisplayNameForDateFormat(format)}
@@ -89,7 +89,7 @@ export default function FinalizeImport({
 						</Stack>
 						<Stack spacing="sm">
 							<label htmlFor={dateFormatSeparatorId}>
-								Date format separator
+								日期分隔符
 							</label>
 							<Select
 								id={dateFormatSeparatorId}
@@ -100,7 +100,7 @@ export default function FinalizeImport({
 									)
 								}
 							>
-								<option value="">Select an option</option>
+								<option value="">请选择</option>
 								{Object.values(DateFormatSeparator).map(
 									(format) => (
 										<option key={format} value={format}>
@@ -111,7 +111,7 @@ export default function FinalizeImport({
 							</Select>
 						</Stack>
 						<Stack spacing="sm">
-							<label htmlFor={includeTimeId}>Includes time</label>
+							<label htmlFor={includeTimeId}>包含时间</label>
 							<Switch
 								id={includeTimeId}
 								value={includeTime}
@@ -119,7 +119,7 @@ export default function FinalizeImport({
 							/>
 						</Stack>
 						<Stack spacing="sm">
-							<label>Expected date format</label>
+							<label>预期日期格式</label>
 							<Text
 								variant="semibold"
 								size="sm"

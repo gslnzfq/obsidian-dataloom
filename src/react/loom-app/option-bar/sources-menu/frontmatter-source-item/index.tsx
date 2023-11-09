@@ -95,7 +95,7 @@ export default function FrontmatterSourceItem({
 					<Flex width="fit-content" grow justify="flex-end">
 						<Button
 							icon={<Icon lucideId="trash" />}
-							ariaLabel="Delete source"
+							ariaLabel="删除数据源"
 							onClick={() => onDelete(id)}
 						/>
 					</Flex>

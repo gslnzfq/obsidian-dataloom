@@ -148,7 +148,7 @@ export function SuggestList({
 			)}
 			{files.length === 0 && (
 				<Padding px="md" pb="md">
-					<Text value="No image files found" />
+					<Text value="没有找到图片文件" />
 				</Padding>
 			)}
 			{showClear && <ClearButton onClick={onClearClick} />}

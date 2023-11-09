@@ -6,15 +6,15 @@ export enum StepType {
 }
 
 export enum DataType {
-	UNSELECTED = "Select an option",
+	UNSELECTED = "请选择",
 	CSV = "CSV",
 	MARKDOWN = "Markdown",
 }
 
 export enum DataSource {
-	UNSELECTED = "Select an option",
-	FILE = "File",
-	PASTE = "Paste from clipboard",
+	UNSELECTED = "请选择",
+	FILE = "文件",
+	PASTE = "剪切板",
 }
 
 export interface ColumnMatch {

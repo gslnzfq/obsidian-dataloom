@@ -124,7 +124,7 @@ export const createColumn = (options?: {
 }): Column => {
 	const {
 		type = CellType.TEXT,
-		content = "New Column",
+		content = "未命名列",
 		includeTime = false,
 		frontmatterKey = null,
 		tags = [],

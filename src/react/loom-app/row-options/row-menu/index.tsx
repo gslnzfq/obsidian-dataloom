@@ -31,18 +31,18 @@ export default function RowOptions({
 				{canDeleteRow && (
 					<MenuItem
 						lucideId="trash-2"
-						name="Delete"
+						name="删除"
 						onClick={() => onDeleteClick()}
 					/>
 				)}
 				<MenuItem
 					lucideId="chevrons-up"
-					name="Insert above"
+					name="上方插入行"
 					onClick={() => onInsertAboveClick()}
 				/>
 				<MenuItem
 					lucideId="chevrons-down"
-					name="Insert below"
+					name="下方插入行"
 					onClick={() => onInsertBelowClick()}
 				/>
 			</div>

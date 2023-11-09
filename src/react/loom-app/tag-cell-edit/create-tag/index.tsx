@@ -21,7 +21,7 @@ export default function CreateTag({ content, color, onTagAdd }: Props) {
 			>
 				<Padding px="md">
 					<Stack spacing="sm" isHorizontal>
-						<div>Create</div>
+						<div>创建</div>
 						<Tag content={content} color={color} maxWidth="120px" />
 					</Stack>
 				</Padding>

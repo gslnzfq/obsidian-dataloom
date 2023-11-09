@@ -32,7 +32,7 @@ export default class DataLoomView extends TextFileView {
 
 	async onOpen() {
 		//Add offset to the container to account for the mobile action bar
-		this.containerEl.style.paddingBottom = "48px";
+		// this.containerEl.style.paddingBottom = "48px";
 
 		//Add settings button to action bar
 		this.addAction("settings", "Settings", () => {

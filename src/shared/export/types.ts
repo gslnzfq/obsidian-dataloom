@@ -1,5 +1,5 @@
 export enum ExportType {
-	UNSELECTED = "Select an option",
+	UNSELECTED = "选择一个类型",
 	CSV = "CSV",
 	MARKDOWN = "Markdown",
 }

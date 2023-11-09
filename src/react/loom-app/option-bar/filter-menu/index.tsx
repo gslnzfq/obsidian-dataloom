@@ -322,7 +322,7 @@ export default function FilterMenu({
 
 	function onToggle(id: string) {
 		const filter = filters.find((filter) => filter.id === id);
-		if (!filter) throw new Error("Filter not found");
+		if (!filter) throw new Error("未找到筛选条件");
 		onUpdate(id, { isEnabled: !filter.isEnabled });
 	}
 
@@ -456,7 +456,7 @@ export default function FilterMenu({
 											}
 										>
 											<option value="">
-												Select an option
+												请选择
 											</option>
 											{tags.map((tag) => (
 												<option
@@ -627,7 +627,7 @@ export default function FilterMenu({
 						})}
 						<Button
 							icon={<Icon lucideId="plus" />}
-							ariaLabel="Add filter"
+							ariaLabel="添加筛选"
 							onClick={() => onAddClick()}
 						/>
 					</Stack>

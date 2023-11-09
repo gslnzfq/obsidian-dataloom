@@ -115,7 +115,7 @@ export default function FooterCellContainer({
 					}}
 				>
 					{calculationType === GeneralCalculation.NONE && (
-						<Text value="Calculate" variant="faint" />
+						<Text value="计算值" variant="faint" />
 					)}
 					{calculationType !== GeneralCalculation.NONE && (
 						<Stack spacing="sm" isHorizontal>

@@ -178,7 +178,7 @@ export default function OptionBar({
 									level={LoomMenuLevel.ONE}
 									onOpen={handleSourceMenuOpen}
 								>
-									Sources
+									数据源
 								</MenuButton>
 							)}
 							{isSmallScreen === false && (
@@ -189,7 +189,7 @@ export default function OptionBar({
 									level={LoomMenuLevel.ONE}
 									onOpen={handleFilterMenuOpen}
 								>
-									Filter
+									筛选
 								</MenuButton>
 							)}
 							<SearchBar />

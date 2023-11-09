@@ -267,7 +267,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.OPTIONS && (
 					<OptionSubmenu
-						title="Options"
+						title="选项"
 						type={type}
 						hour12={hour12}
 						horizontalPadding={horizontalPadding}
@@ -286,7 +286,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.ASPECT_RATIO && (
 					<AspectRatioSubmenu
-						title="Aspect ratio"
+						title="宽高比"
 						value={aspectRatio}
 						onValueClick={handleAspectRatioClick}
 						onBackClick={() => setSubmenu(null)}
@@ -295,7 +295,7 @@ export default function HeaderMenu({
 
 				{submenu === SubmenuType.HORIZONTAL_PADDING && (
 					<PaddingSubmenu
-						title="Horizontal padding"
+						title="水平内边距"
 						value={horizontalPadding}
 						onValueClick={handleHorizontalPaddingClick}
 						onBackClick={() => setSubmenu(null)}
@@ -304,7 +304,7 @@ export default function HeaderMenu({
 
 				{submenu === SubmenuType.VERTICAL_PADDING && (
 					<PaddingSubmenu
-						title="Vertical padding"
+						title="垂直内边距"
 						value={verticalPadding}
 						onValueClick={handleVerticalPaddingClick}
 						onBackClick={() => setSubmenu(null)}
@@ -312,7 +312,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.TYPE && (
 					<TypeSubmenu
-						title="Type"
+						title="数据类型"
 						value={type}
 						onValueClick={handleTypeClick}
 						onBackClick={() => setSubmenu(null)}
@@ -328,7 +328,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.DATE_FORMAT_SEPARATOR && (
 					<DateFormatSeparatorSubmenu
-						title="Date separator"
+						title="日期分隔符"
 						value={dateFormatSeparator}
 						onValueClick={handleDateFormatSeparatorClick}
 						onBackClick={() => setSubmenu(SubmenuType.OPTIONS)}
@@ -336,7 +336,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.TIME_FORMAT && (
 					<TimeFormatSubmenu
-						title="Time format"
+						title="时间格式"
 						value={hour12}
 						onValueClick={handleTimeFormatClick}
 						onBackClick={() => setSubmenu(SubmenuType.OPTIONS)}
@@ -344,7 +344,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.CURRENCY && (
 					<NumberFormatSubmenu
-						title="Number format"
+						title="数字格式"
 						format={numberFormat}
 						currency={currencyType}
 						onNumberFormatChange={handleNumberFormatChange}
@@ -353,7 +353,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.TEXT_INPUT_NUMBER_PREFIX && (
 					<TextInputSubmenu
-						title="Prefix"
+						title="前缀"
 						value={numberPrefix}
 						closeRequest={closeRequest}
 						onValueChange={handleNumberOptionChange}
@@ -363,7 +363,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.TEXT_INPUT_NUMBER_SUFFIX && (
 					<TextInputSubmenu
-						title="Suffix"
+						title="后缀"
 						closeRequest={closeRequest}
 						value={numberSuffix}
 						onClose={onClose}
@@ -373,7 +373,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.TEXT_INPUT_NUMBER_SEPARATOR && (
 					<TextInputSubmenu
-						title="Separator"
+						title="分隔符"
 						closeRequest={closeRequest}
 						value={numberSeparator}
 						onClose={onClose}
@@ -383,7 +383,7 @@ export default function HeaderMenu({
 				)}
 				{submenu === SubmenuType.FRONTMATTER_KEY && (
 					<FrontmatterKeySubmenu
-						title="Frontmatter key"
+						title="关联文档属性"
 						selectedKey={frontmatterKey}
 						frontmatterKeys={frontmatterKeys}
 						onFrontmatterKeyChange={handleFrontmatterKeyChange}

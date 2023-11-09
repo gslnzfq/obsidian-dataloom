@@ -53,7 +53,7 @@ export default function MenuHeader({
 				ref={inputRef}
 				isTransparent
 				focusOutline="none"
-				placeholder="Search for a tag..."
+				placeholder="输入关键字搜索..."
 				value={inputValue}
 				onChange={handleInputChange}
 			/>

@@ -14,14 +14,14 @@ export default function SearchBar() {
 			<Stack spacing="lg" isHorizontal>
 				{isSearchBarVisible && (
 					<Input
-						placeholder="Type to search..."
+						placeholder="输入关键字搜索..."
 						value={searchText}
 						onChange={(value) => setSearchText(value)}
 					/>
 				)}
 				<Button
 					icon={<Icon lucideId="search" />}
-					ariaLabel="Search"
+					ariaLabel="搜索"
 					onClick={() => toggleSearchBar()}
 				/>
 			</Stack>

@@ -78,7 +78,7 @@ export default function BaseContent({
 			<Button
 				icon={<Icon lucideId="plus"></Icon>}
 				onClick={() => onSourceAdd()}
-				ariaLabel="Add source"
+				ariaLabel="添加数据源"
 			/>
 		</Stack>
 	);

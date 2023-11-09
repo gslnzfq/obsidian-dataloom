@@ -8,9 +8,7 @@ import Button from "src/react/shared/button";
 import Flex from "src/react/shared/flex";
 import Padding from "src/react/shared/padding";
 import Icon from "src/react/shared/icon";
-
-import { numToPx } from "src/shared/conversion";
-import { isOnMobile } from "src/shared/render-utils";
+import {isOnMobile} from "src/shared/render-utils";
 
 import "./styles.css";
 
@@ -30,7 +28,7 @@ export default function BottomBar({
 	onRedoClick,
 }: Props) {
 	const ref = React.useRef<HTMLDivElement | null>(null);
-	const [bottomBarOffset, setBottomBarOffset] = React.useState(0);
+	// const [bottomBarOffset, setBottomBarOffset] = React.useState(0);
 	const isMobile = isOnMobile();
 
 	React.useEffect(() => {
@@ -57,7 +55,7 @@ export default function BottomBar({
 
 			let diff = tableContainerRect.height - tableRect.height;
 			if (diff < 0) diff = 0;
-			setBottomBarOffset(diff);
+			// setBottomBarOffset(diff);
 		}
 
 		const THROTTLE_TIME_MILLIS = 50;
@@ -85,9 +83,9 @@ export default function BottomBar({
 	return (
 		<div ref={ref} className={className}>
 			<div
-				style={{
-					top: numToPx(-bottomBarOffset),
-				}}
+				// style={{
+				// 	top: numToPx(-bottomBarOffset),
+				// }}
 			>
 				<Padding pt="md" width="100%">
 					<Stack spacing="sm">
@@ -95,12 +93,12 @@ export default function BottomBar({
 							<NewRowButton onClick={onRowAddClick} />
 							<Stack isHorizontal spacing="sm">
 								<Button
-									ariaLabel="Scroll to top"
+									ariaLabel="滚动到顶部"
 									icon={<Icon lucideId="chevron-up" />}
 									onClick={onScrollToTopClick}
 								/>
 								<Button
-									ariaLabel="Scroll to bottom"
+									ariaLabel="滚动到底部"
 									onClick={onScrollToBottomClick}
 									icon={<Icon lucideId="chevron-down" />}
 								/>
@@ -109,13 +107,13 @@ export default function BottomBar({
 						{isMobile && (
 							<Flex justify="space-between">
 								<Button
-									ariaLabel="Undo"
+									ariaLabel="撤销"
 									size="lg"
 									icon={<Icon lucideId="undo" />}
 									onClick={onUndoClick}
 								/>
 								<Button
-									ariaLabel="Redo"
+									ariaLabel="重做"
 									size="lg"
 									icon={<Icon lucideId="redo" />}
 									onClick={onRedoClick}

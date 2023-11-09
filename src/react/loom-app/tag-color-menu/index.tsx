@@ -69,12 +69,12 @@ export default function TagColorMenu({
 					</Padding>
 					<MenuItem
 						lucideId="trash-2"
-						name="Delete"
+						name="删除"
 						onClick={onDeleteClick}
 					/>
 					<Divider />
 					<Padding px="lg" py="sm">
-						<Text value="Colors" />
+						<Text value="颜色" />
 					</Padding>
 					<div className="dataloom-tag-color-menu__color-container">
 						{Object.values(Color).map((color) => (

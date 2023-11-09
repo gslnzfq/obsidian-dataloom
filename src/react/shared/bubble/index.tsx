@@ -40,7 +40,7 @@ export default function Bubble({
 						icon={
 							<Icon lucideId="x" color="var(--text-on-accent)" />
 						}
-						ariaLabel="Remove sort"
+						ariaLabel="移除排序"
 						onClick={onRemoveClick}
 					/>
 				)}

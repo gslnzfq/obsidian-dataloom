@@ -16,10 +16,10 @@ export default function SettingsSubmenu({
 	onBackClick,
 }: Props) {
 	return (
-		<Submenu title="Settings" onBackClick={onBackClick}>
+		<Submenu title="设置" onBackClick={onBackClick}>
 			<Padding px="lg" py="md">
 				<Stack isHorizontal spacing="lg">
-					<Text value="Calculation row" />
+					<Text value="展示计算行" />
 					<Switch
 						value={showCalculationRow}
 						onToggle={onCalculationRowToggle}

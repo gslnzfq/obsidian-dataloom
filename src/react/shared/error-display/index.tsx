@@ -27,7 +27,7 @@ export default function ErrorDisplay({
 }: Props) {
 	function handleCopyClick() {
 		navigator.clipboard.writeText(copyErrorMessage);
-		new Notice("Copied error to clipboard");
+		new Notice("复制到剪切板失败");
 	}
 
 	let className = "dataloom-error";
@@ -63,7 +63,7 @@ export default function ErrorDisplay({
 							className="dataloom-copy-button"
 							onClick={() => handleCopyClick()}
 						>
-							Copy to clipboard
+							复制到剪切板
 						</button>
 					</Stack>
 				</Stack>

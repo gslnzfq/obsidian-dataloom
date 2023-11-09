@@ -30,25 +30,25 @@ export default function BaseContent({
 			{isSmallScreen && (
 				<MenuItem
 					lucideId="filter"
-					name="Sources"
+					name="数据源"
 					onClick={onSourcesClick}
 				/>
 			)}
 			{isSmallScreen && (
 				<MenuItem
 					lucideId="filter"
-					name="Filter"
+					name="筛选"
 					onClick={onFilterClick}
 				/>
 			)}
 			<MenuItem
 				lucideId="eye-off"
-				name="Toggle"
+				name="切换列"
 				onClick={onToggleColumnClick}
 			/>
 			<MenuItem
 				lucideId="import"
-				name="Import"
+				name="导入"
 				onClick={() => {
 					onClose();
 					new ImportModal(app, loomFile, loomState).open();
@@ -56,7 +56,7 @@ export default function BaseContent({
 			/>
 			<MenuItem
 				lucideId="download"
-				name="Export"
+				name="导出"
 				onClick={() => {
 					onClose();
 					new ExportModal(app, loomFile, loomState).open();
@@ -64,7 +64,7 @@ export default function BaseContent({
 			/>
 			<MenuItem
 				lucideId="wrench"
-				name="Settings"
+				name="设置"
 				onClick={onSettingsClick}
 			/>
 		</Padding>

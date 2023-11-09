@@ -20,7 +20,7 @@ export default class ExportModal extends Modal {
 
 	onOpen() {
 		const { containerEl } = this;
-		setModalTitle(containerEl, "DataLoom Export");
+		setModalTitle(containerEl, "DataLoom导出");
 
 		const { contentEl } = this;
 		renderDivider(contentEl);

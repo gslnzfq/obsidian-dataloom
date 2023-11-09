@@ -16,8 +16,8 @@ export default function FilterOperator({ id, value, onChange }: Props) {
 				onChange(id, newValue as FilterOperatorType)
 			}
 		>
-			<option value="or">Or</option>
-			<option value="and">And</option>
+			<option value="or">或者</option>
+			<option value="and">并且</option>
 		</Select>
 	);
 }

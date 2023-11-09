@@ -62,11 +62,11 @@ export default function NewFrontmatterKeySubmenu({
 			<Padding px="lg" py="md">
 				<Stack spacing="lg">
 					<Stack spacing="sm">
-						<label htmlFor={keyNameId}>Key Name</label>
+						<label htmlFor={keyNameId}>Key名称</label>
 						<Input id={keyNameId} value={key} onChange={setKey} />
 					</Stack>
 					<Stack spacing="sm">
-						<label htmlFor={keyTypeId}>Key Type</label>
+						<label htmlFor={keyTypeId}>Key类型</label>
 						<Select
 							id={keyTypeId}
 							value={keyType ?? ""}
@@ -76,7 +76,7 @@ export default function NewFrontmatterKeySubmenu({
 								)
 							}
 						>
-							<option value="">Select an option</option>
+							<option value="">请选择</option>
 							{getAcceptedFrontmatterTypes(columnType).map(
 								(type) => (
 									<option key={type} value={type}>
@@ -87,7 +87,7 @@ export default function NewFrontmatterKeySubmenu({
 						</Select>
 					</Stack>
 					<Button variant="default" onClick={handleCreateClick}>
-						Create
+						创建
 					</Button>
 				</Stack>
 			</Padding>

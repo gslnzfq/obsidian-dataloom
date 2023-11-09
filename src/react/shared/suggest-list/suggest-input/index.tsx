@@ -13,7 +13,7 @@ export default function SuggestInput({ value, onChange }: Props) {
 			<Input
 				isTransparent
 				focusOutline="none"
-				placeholder="Search for a file..."
+				placeholder="输入关键字搜索..."
 				value={value}
 				onChange={onChange}
 			/>

@@ -58,7 +58,7 @@ export default function HeaderCell({
 						<Icon
 							color={matchId ? "green" : "red"}
 							ariaLabel={
-								matchId !== null ? "Matched" : "Unmatched"
+								matchId !== null ? "匹配" : "不匹配"
 							}
 							lucideId={
 								matchId !== null
@@ -71,7 +71,7 @@ export default function HeaderCell({
 					<Stack isHorizontal spacing="sm">
 						<input
 							aria-label={
-								isDisabled ? "Enable column" : "Disable column"
+								isDisabled ? "启用列" : "禁用列"
 							}
 							type="checkbox"
 							checked={!isDisabled}
@@ -82,7 +82,7 @@ export default function HeaderCell({
 							isFocused={menu.isTriggerFocused}
 							menuId={menu.id}
 							level={LoomMenuLevel.ONE}
-							ariaLabel="Match column"
+							ariaLabel="匹配列"
 							icon={<Icon lucideId="columns" size="lg" />}
 							onOpen={() =>
 								menu.onOpen(LoomMenuLevel.ONE, {
